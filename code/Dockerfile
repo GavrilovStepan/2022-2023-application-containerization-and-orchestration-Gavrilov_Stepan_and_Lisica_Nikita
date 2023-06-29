@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER -
+MAINTAINER Lisicsa Nikita and Gavrilov Stepan
 RUN apt-get update -qy
 RUN apt-get install -qy python3.11 python3-pip python3.11-dev
 COPY . /app
