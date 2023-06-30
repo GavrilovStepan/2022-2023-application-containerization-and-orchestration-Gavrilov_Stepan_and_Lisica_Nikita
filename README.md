@@ -8,11 +8,9 @@
 # Архитектура
 Web-приложение реализовано на языке Python с использованием фреймворка [Flask](https://flask.palletsprojects.com/en/2.3.x/).
 
-Docker-контейнер приложения опубликован в Dockerhub: [stepangavrilov
-/flask_app](https://hub.docker.com/repository/docker/stepangavrilov/flask_app/general).
+Docker-контейнер приложения опубликован в Dockerhub: [stepangavrilov/flask_app](https://hub.docker.com/repository/docker/stepangavrilov/flask_app/general).
 
-Для автоматизации процессов CI/CD в проекте используются github actions, включающие в себя: проверку кода, сборку образа и выгрузку его на Dockerhub: [stepangavrilov
-/flask_app](https://hub.docker.com/repository/docker/stepangavrilov/flask_app/general) при каждом новом коммите.
+Для автоматизации процессов CI/CD в проекте используются github actions, включающие в себя: проверку кода, сборку образа и выгрузку его на Dockerhub: [stepangavrilov/flask_app](https://hub.docker.com/repository/docker/stepangavrilov/flask_app/general) при каждом новом коммите.
 
 Приложение развёрнуто в k8s кластере с использованием deployment.
 Для k8s кластера настроена система мониторинга Prometheus + Grafana.
@@ -74,7 +72,7 @@ nano sum-ingress.yaml
 ```
 Применение правил ingress для сервиса sum-service
 ```
-kubectl apply -f summarizator_web/infrastructure/sum-ingress.yaml
+kubectl apply -f 2022-2023-application-containerization-and-orchestration-Gavrilov_Stepan_and_Lisica_Nikita/infrastructure/pro-gra-aler-ingress.yaml
 ```
 После приложение будет доступно по адресу http://YOUR_HOST_NAME/app
 
