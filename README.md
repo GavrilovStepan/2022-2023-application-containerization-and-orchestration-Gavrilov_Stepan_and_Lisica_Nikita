@@ -67,9 +67,9 @@ minikube addons enable ingress
 
 kubectl apply -f 2022-2023-application-containerization-and-orchestration-Gavrilov_Stepan_and_Lisica_Nikita/infrastructure/ingress.yaml
 ```
-Чтобы использовать ingress требуется указать доменное имя в файле sum-ingress.yaml, строка host
+Чтобы использовать ingress требуется указать доменное имя в файле ingress.yaml, строка host
 ```
-nano sum-ingress.yaml
+nano ingress.yaml
 ```
 Применение правил ingress для сервиса service
 ```
