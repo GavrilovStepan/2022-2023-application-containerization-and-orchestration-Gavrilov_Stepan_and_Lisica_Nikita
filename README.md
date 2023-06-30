@@ -19,9 +19,9 @@ Docker-контейнер приложения опубликован в Dockerh
 ## Docker
 Для установки приложения воспользуйтесь образом с Dockerhub:
 ```
-docker pull stepangavrilov/flask_app:tagname:main
+docker pull stepangavrilov/flask_app:main
 
-docker run -p -d 5000:5000 stepangavrilov/flask_app:tagname:main
+docker run -p -d 5000:5000 stepangavrilov/flask_app:main
 ```
 Для проверки установки воспользуйтесь командой
 ```
