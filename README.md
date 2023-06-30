@@ -19,8 +19,9 @@ Docker-контейнер приложения опубликован в Dockerh
 ## Docker
 Для установки приложения воспользуйтесь образом с Dockerhub:
 ```
-docker pull stepangavrilov/flask_app:tagname:latest
-docker run -p -d 5000:5000 stepangavrilov/flask_app:tagname:latest 
+docker pull stepangavrilov/flask_app:tagname:main
+
+docker run -p -d 5000:5000 stepangavrilov/flask_app:tagname:main
 ```
 Для проверки установки воспользуйтесь командой
 ```
@@ -70,7 +71,7 @@ kubectl apply -f 2022-2023-application-containerization-and-orchestration-Gavril
 ```
 nano sum-ingress.yaml
 ```
-Применение правил ingress для сервиса sum-service
+Применение правил ingress для сервиса service
 ```
 kubectl apply -f 2022-2023-application-containerization-and-orchestration-Gavrilov_Stepan_and_Lisica_Nikita/infrastructure/pro-gra-aler-ingress.yaml
 ```
